@@ -91,7 +91,21 @@ section{
 
 .home-img img{
     width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
 }
+
+@keyframes floatImage {
+    0%{
+        transform: translateY();
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY();
+    }
+}
+
 
 .home-content h3{
     font-size: 3.2rem;
@@ -190,6 +204,10 @@ span{
     margin: 2rem 0 3rem;
 
 }
+
+/* #list{
+    font-size: 1rem;
+} */
 
 .services h2{
     margin-bottom: 5rem;
@@ -370,10 +388,64 @@ span{
 }
 
 
-.footer-iconTop a{
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+    position: relative; 
+}
+
+.footer-iconTop {
+    position: absolute; 
+    top: 1rem; 
+    right: 2.6rem; 
+}
+
+.footer-iconTop a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    padding: .6rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
+
+
+#tree{
+    color: var(--text-color);
+}
+
+
+
+/* .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+
+.footer-iconTop a{
+    
+    display: inline-flex;
+    justify-content: space-between;
+    
     padding: .8rem;
     background: var(--main-color);
     border-radius: .8rem;
@@ -387,10 +459,11 @@ span{
 }
 
 .footer-iconTop a i{
+   
     font-size: 2.4rem;
     color: var(--second-bg-color);
 
-}
+} */
 
 /* BREAKPOINTS */
 
@@ -507,5 +580,36 @@ span{
 @media(max-width: 617px) {
     .portfolio-container{
         grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box input {
+       width: 100%; 
+    }
+}
+
+
+@media(max-width: 365px) {
+    .home-img {
+        width: 900vw;
+    }
+
+    .about-img img {
+        width: 90vw;
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
     }
 }
