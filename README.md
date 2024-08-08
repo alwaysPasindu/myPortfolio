@@ -4,6 +4,5 @@ Based on HTML, CSS and JavaScript
 
 
 
+![screencapture-pasindu-live-2024-08-08-21_57_27_resized](https://github.com/user-attachments/assets/fa9320be-ddf2-4782-91f4-402f4f0bd32c)
 
-
-![screencapture-pasindu-live-2024-08-08-21_44_39_resized](https://github.com/user-attachments/assets/95edf843-d8bc-42f5-98c4-5ec0f5d9cfa6)
